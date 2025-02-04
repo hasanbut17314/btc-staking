@@ -1,7 +1,21 @@
+:root {
+    background-color: black;
+    color: white;
+    font-family: "Bai Jamjuree", serif;
+}
 .btn {
     background: linear-gradient(280deg, #D053A8 10%, #4A25A9 90%);
-    padding: 8px 28px;
+    padding: 12px 28px;
     border-radius: 10px;
     color: white;
     font-size: 15px;
+}
+.hero{
+    background-image: url("./assets/hero/bg.png")
+}
+
+@media screen and (max-width: 600px) {
+    .btn{
+        padding: 8px 16px;
+    }
 }
