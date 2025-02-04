@@ -1,8 +1,10 @@
 import whatpic from "/whathappens.png"
+import ball from "/ball.png"
 
 export default function WhatHappens() {
     return (
-        <div className="min-h-screen bg-black text-white flex items-center">
+        <div className="min-h-screen bg-black text-white flex items-center relative">
+            <img src={ball} alt="" className="absolute top-5 left-0 max-w-96" />
             <div className="container mx-auto px-4 py-12 flex flex-col lg:flex-row items-center gap-12">
                 {/* 3D Shape Image */}
                 <div className="w-full lg:w-1/2">

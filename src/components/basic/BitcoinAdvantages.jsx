@@ -1,4 +1,5 @@
 import dragon from "/dragon.png"
+import ball from "/ball.png"
 
 export default function BitcoinAdvantages() {
     const features = [
@@ -24,6 +25,7 @@ export default function BitcoinAdvantages() {
 
     return (
         <div className="min-h-screen bg-black text-white p-6 lg:p-12 relative overflow-hidden">
+            <img src={ball} alt="" className="absolute top-0 right-0 sm:max-w-96 max-w-64" />
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="max-w-4xl mb-12">

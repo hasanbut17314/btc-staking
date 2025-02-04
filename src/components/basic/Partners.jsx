@@ -14,10 +14,14 @@ import pic12 from "/partner12.png"
 import pic13 from "/partner13.png"
 import pic14 from "/partner14.png"
 import pic15 from "/partner15.png"
+import bg from "/partnerbg.png"
+import bal from "/ball.png"
 
 const Partners = () => {
     return (
-        <div className='py-16 bg-black xl:px-0 sm:px-6 px-3'>
+        <div className='py-16 bg-black xl:px-0 sm:px-6 px-3 relative z-10'>
+            <img src={bg} alt="bg" className='absolute top-0 left-1 max-w-64 h-full object-cover z-[-1] opacity-30' />
+            <img src={bal} alt="bg" className='absolute top-0 left-0 max-w-64 h-full object-cover z-[-1]' />
             <div className='bg-[#D9D9D9] max-w-5xl mx-auto sm:p-8 p-5 rounded-lg'>
                 <div className='flex md:flex-row flex-col items-center justify-between'>
                     <h1 className='md:text-6xl text-4xl font-bold'>Backers</h1>
