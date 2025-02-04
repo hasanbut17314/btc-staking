@@ -4,6 +4,7 @@ import SecureNetwork from '../components/basic/SecureNetwork'
 import SecurityFeatures from '../components/basic/SecurityFeatures'
 import Partners from '../components/basic/Partners'
 import SecondSec from '../components/basic/SecondSec'
+import StakingDiagram from '../components/basic/Diagram'
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <SecondSec />
             <WhatHappens />
             <BitcoinAdvantages />
+            <StakingDiagram />
             <SecureNetwork />
             <SecurityFeatures />
             <Partners />
