@@ -1,8 +1,13 @@
 import React from 'react'
+import WhatHappens from '../components/basic/WhatHappens'
+import BitcoinAdvantages from '../components/basic/BitcoinAdvantages'
 
 const Home = () => {
     return (
-        <div>Home</div>
+        <main>
+            <WhatHappens />
+            <BitcoinAdvantages />
+        </main>
     )
 }
 
