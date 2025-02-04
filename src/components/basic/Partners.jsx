@@ -23,7 +23,7 @@ const Partners = () => {
             <img src={bg} alt="bg" className='absolute top-0 left-1 max-w-64 h-full object-cover z-[-1] opacity-30' />
             <img src={bal} alt="bg" className='absolute top-0 left-0 max-w-64 h-full object-cover z-[-1]' />
             <div className='bg-[#D9D9D9] max-w-5xl mx-auto sm:p-8 p-5 rounded-lg'>
-                <div className='flex md:flex-row flex-col items-center justify-between'>
+                <div className='flex md:flex-row flex-col items-center justify-between text-black'>
                     <h1 className='md:text-6xl text-4xl font-bold'>Backers</h1>
                     <p className='sm:text-sm text-xs md:w-1/2'>The Babylon protocol development is backed by cutting-edge investment firms who believe in Bitcoin and its use cases.</p>
                 </div>
