@@ -1,6 +1,7 @@
 import pic1 from "/security1.png"
 import pic2 from "/security2.png"
 import pic3 from "/security3.png"
+import GradientCard from "../ui/GradientCard"
 
 export default function SecurityFeatures() {
     const features = [
@@ -36,28 +37,30 @@ export default function SecurityFeatures() {
                 {/* Features Grid */}
                 <div className="grid md:grid-cols-3 gap-6">
                     {features.map((feature, index) => (
-                        <div key={index} className="relative rounded-2xl bg-[#111111] sm:p-8 p-5 overflow-hidden">
-                            {/* Image */}
-                            <img src={feature.image} alt={feature.title} className="max-w-32 mx-auto mb-8 min-h-28" />
-                            {/* Gradient Border */}
-                            <div className="absolute inset-0 rounded-2xl border border-transparent bg-gradient-to-br from-[#d053a8] to-[#8811c5] -z-10" />
+                        <GradientCard key={index}>
+                            <div className="relative rounded-2xl bg-[#111111] sm:p-8 p-5 overflow-hidden h-full">
+                                {/* Image */}
+                                <img src={feature.image} alt={feature.title} className="max-w-32 mx-auto mb-8 min-h-28" />
+                                {/* Gradient Border */}
+                                <div className="absolute inset-0 rounded-2xl border border-transparent bg-gradient-to-br from-[#d053a8] to-[#8811c5] -z-10" />
 
-                            {/* Content */}
-                            <div className="space-y-6">
-                                <h3 className="text-xl sm:text-2xl font-semibold text-center">{feature.title}</h3>
-                                <p className="text-gray-400 leading-relaxed">{feature.description}</p>
+                                {/* Content */}
+                                <div className="space-y-6">
+                                    <h3 className="text-xl sm:text-2xl font-semibold text-center">{feature.title}</h3>
+                                    <p className="text-gray-400 leading-relaxed">{feature.description}</p>
 
-                                {/* Tags */}
-                                <div className="space-y-3">
-                                    {feature.tags.map((tag, tagIndex) => (
-                                        <div key={tagIndex} className="flex items-center gap-2">
-                                            <div className="w-3 h-3 rounded-full bg-gradient-to-r from-[#d053a8] to-[#8811c5]" />
-                                            <span className="text-sm text-gray-300">{tag}</span>
-                                        </div>
-                                    ))}
+                                    {/* Tags */}
+                                    <div className="space-y-3">
+                                        {feature.tags.map((tag, tagIndex) => (
+                                            <div key={tagIndex} className="flex items-center gap-2">
+                                                <div className="w-3 h-3 rounded-full bg-gradient-to-r from-[#d053a8] to-[#8811c5]" />
+                                                <span className="text-sm text-gray-300">{tag}</span>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </GradientCard>
                     ))}
                 </div>
             </div>

@@ -1,9 +1,14 @@
+import ball from "/ball.png"
+import bg from "/securebg.png"
+
 export default function SecureNetwork() {
     const navItems = ["Bitcoin Stakers", "Bitcoin Secured Networks", "Finality Providers"]
     const actions = ["Stake", "Secure", "Receive"]
 
     return (
-        <div className="min-h-screen bg-black text-white relative p-6 lg:p-12">
+        <div className=" bg-black text-white relative z-10 p-6 lg:p-12">
+            <img src={ball} alt="" className="absolute bottom-0 left-1/2 -translate-x-1/2 max-w-96" />
+            <img src={bg} alt="" className="absolute top-10 rigth-0 max-w-64 h-full z-[-1] opacity-40" />
             {/* Navigation */}
             <nav className="max-w-7xl mx-auto md:mb-20 mb-10">
                 <ul className="flex justify-between border-b border-white/10 pb-4">
@@ -16,7 +21,7 @@ export default function SecureNetwork() {
             </nav>
 
             {/* Main Content */}
-            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr,auto] gap-12 items-center">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr,auto] gap-12 items-center z-10">
                 <div className="sm:space-y-12 space-y-8">
                     {/* Main Text */}
                     <div className="space-y-6">
