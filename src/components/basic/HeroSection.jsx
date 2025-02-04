@@ -1,5 +1,5 @@
 import hero2 from "../../assets/hero/hero_2.png"
-import Ellipse from "../../assets/hero/ellipse.png"
+import Ellipse from "../../assets/hero/Ellipse.png"
 
 export default function BitcoinStaking() {
   return (
