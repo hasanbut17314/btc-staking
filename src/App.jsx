@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './layout/Layout'
 import Home from './pages/Home'
+import StakingInterface from './pages/StakingInterface'
 import './App.css'
 
 function App() {
@@ -13,6 +14,10 @@ function App() {
         {
           path: '/',
           element: <Home />,
+        },
+        {
+          path: '/staking-interface',
+          element: <StakingInterface />,
         },
       ],
     },

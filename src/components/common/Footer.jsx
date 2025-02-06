@@ -11,6 +11,7 @@ import {
     Phone,
     Printer,
 } from "lucide-react"
+import ball from "/ball.png"
 
 export default function Footer() {
     const socialLinks = [
@@ -33,7 +34,9 @@ export default function Footer() {
     ]
 
     return (
-        <footer className="bg-black/90 drop-shadow-md text-white/70">
+        <footer className="bg-white/[0.07] drop-shadow-md text-white/70 relative z-10 overflow-hidden">
+            <img src={ball} alt="" className="absolute top-1/3 left-12 max-w-96 z-[-1]" />
+            <img src={ball} alt="" className="absolute top-0 right-9 max-w-96 z-[-1]" />
             <div className="max-w-8xl mx-auto p-6 lg:p-10 space-y-12 pt-12">
                 {/* Main Footer Content */}
                 <div className="grid md:grid-cols-2 sm:gap-14 gap-8">

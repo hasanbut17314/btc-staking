@@ -10,10 +10,10 @@ const Home = () => {
     return (
         <main>
             <SecondSec />
-            {/* <WhatHappens /> */}
+            <WhatHappens />
             <BitcoinAdvantages />
-            {/* <StakingDiagram /> */}
-            {/* <SecureNetwork /> */}
+            <StakingDiagram />
+            <SecureNetwork />
             <SecurityFeatures />
             <Partners />
         </main>

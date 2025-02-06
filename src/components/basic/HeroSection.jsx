@@ -1,5 +1,6 @@
 import hero2 from "../../assets/hero/hero_2.png"
 import Ellipse from "../../assets/hero/Ellipse.png"
+import { Link } from "react-router-dom"
 
 export default function BitcoinStaking() {
   return (
@@ -38,7 +39,9 @@ export default function BitcoinStaking() {
 
           <div className="flex items-center  justify-between gap-4 md:mr-40 pt-8">
             <button className="btn">
-              Staking Interface
+              <Link to="/staking-interface">
+                Staking Interface
+              </Link>
             </button>
             <div className="flex items-center -space-x-4">
               {[...Array(3)].map((_, i) => (
