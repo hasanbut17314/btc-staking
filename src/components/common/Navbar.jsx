@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom';
+import logo from '/logo.png'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,11 @@ const Navbar = () => {
         <nav className="relative">
             {/* Main Navbar */}
             <div className="flex items-center bg-transparent justify-between gap-4 mx-4 md:mx-12 p-4">
-                <div className="text-2xl">LOGO</div>
+                <div>
+                    <Link to="/">
+                        <img src={logo} alt="logo" className="sm:w-14 w-12" />
+                    </Link>
+                </div>
 
                 {/* Desktop Menu */}
                 <ul className="hidden md:flex text-xl items-center gap-12">
@@ -31,26 +36,6 @@ const Navbar = () => {
                             }
                         >
                             Staking Interface
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            to="/build"
-                            className={({ isActive }) =>
-                                `cursor-pointer hover:opacity-80 ${isActive ? 'text-[#d053a8]' : ''}`
-                            }
-                        >
-                            Build
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            to="/learn"
-                            className={({ isActive }) =>
-                                `cursor-pointer hover:opacity-80 ${isActive ? 'text-[#d053a8]' : ''}`
-                            }
-                        >
-                            Learn
                         </NavLink>
                     </li>
                     <li>
@@ -113,26 +98,6 @@ const Navbar = () => {
                                     }
                                 >
                                     Staking Interface
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink
-                                    to="/build"
-                                    className={({ isActive }) =>
-                                        `cursor-pointer hover:opacity-80 ${isActive ? 'text-[#d053a8]' : ''}`
-                                    }
-                                >
-                                    Build
-                                </NavLink>
-                            </li>
-                            <li>
-                                <NavLink
-                                    to="/learn"
-                                    className={({ isActive }) =>
-                                        `cursor-pointer hover:opacity-80 ${isActive ? 'text-[#d053a8]' : ''}`
-                                    }
-                                >
-                                    Learn
                                 </NavLink>
                             </li>
                             <li>
